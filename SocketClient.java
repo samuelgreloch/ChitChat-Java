@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -47,7 +48,7 @@ public class SocketClient extends JFrame implements ActionListener, Runnable {
         input_Text.setForeground(new Color(0, 0, 0));
         input_Text.setFont(new Font("Tahoma", Font.BOLD, 11));
         input_Text.setBackground(new Color(230, 230, 250));
-        
+
         getContentPane().add(input_Text, "South");
         setSize(325, 411);
         setVisible(true);
@@ -106,4 +107,7 @@ public class SocketClient extends JFrame implements ActionListener, Runnable {
         pw.println(data); // Send to server side
         input_Text.setText("");
     }
-}
+
+
+
+    }
